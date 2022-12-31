@@ -32,44 +32,55 @@ const game = () => {
     };
 
     const winner = (player,computer) => {
-        const result = $('#result');
+        const result = $('.result');
         const playerScoreBoard = $('#player-score');
         const computerScoreBoard = $('#computer-score');
         player = player.toLowerCase();
         computer = computer.toLowerCase();
         switch (true) {
             case (player === computer):
-                result.text('Tie');
+                result.text('Tie!');
                 break;
             case (player == 'rock'):
                 if(computer == 'paper'){
-                    result.text('Computer Won');
+                    result.text('Computer Won!');
+                    result.css('margin-bottom', '2rem');
+                    result.css('font-size', '18px');
                     computerScore++;
                     computerScoreBoard.text(computerScore);
                 } else {
-                    result.text('Player Won');
+                    result.text('Player Won!');
+                    result.css('margin-bottom', '2rem');
                     playerScore++;
                     playerScoreBoard.text(playerScore);
                 }
                 break;
             case (player == 'scissors'):
                 if(computer == 'rock'){
-                    result.text('Computer Won');
+                    result.text('Computer Won!');
+                    result.css('margin-bottom', '2rem');
+                    result.css('font-size', '18px');
                     computerScore++;
                     computerScoreBoard.text(computerScore);
                 } else {
                     result.text('Player Won');
+                    result.css('margin-bottom', '2rem');
+                    result.css('font-size', '18px');
                     playerScore++;
                     playerScoreBoard.text(playerScore);
                 }
                 break;
             case (player == 'paper'):
                 if(computer == 'scissors'){
-                    result.text('Computer Won');
+                    result.text('Computer Won!');
+                    result.css('margin-bottom', '2rem');
+                    result.css('font-size', '18px');
                     computerScore++;
                     computerScoreBoard.text(computerScore);
                 } else {
-                    result.text('Player Won');
+                    result.text('Player Won!');
+                    result.css('margin-bottom', '2rem');
+                    result.css('font-size', '18px');
                     playerScore++;
                     playerScoreBoard.text(playerScore);
                 }
