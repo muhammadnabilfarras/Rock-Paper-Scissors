@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="title">
+        <p>Rock Paper Scissors</p>
+        <img src="./public/img/rock paper scissors.png" alt="title logo">
+    </div> 
+    
+    <div class="game">
+        <button class="reset">Reset</button>
+        <div class="result"></div>
+        <div class="movesLeft">
+            <p>Moves left: 10</p>
+        </div>
+        <div class="choose">
+            <div class="choice" id="rock">
+                <img src="./public/img/rock.gif" alt="rock">
+                <p id="rock">Rock</p>
+            </div>
+            <div class="choice" id="paper">
+                <img src="./public/img/paper.jpg" alt="paper">
+                <p id="paper">Paper</p>
+            </div>
+            <div class="choice" id="scissors">
+                <img src="./public/img/scissors.png" alt="scissors">
+                <p id="scissors">Scissors</p>
+            </div> 
+        </div>
+        <div class="scoreboard">
+            <p>Score</p>
+            <div class="players">
+                <span id="player-label">Player</span>
+                <span id="computer-label">CPU</span>
+            </div>
+            <div class="score">
+                <span id="player-score">0</span> | <span id="computer-score">0</span>
+            </div>
+        </div>
+    </div>
+    <script src="./public/js/index.js"></script>
+</body>
+</html>
